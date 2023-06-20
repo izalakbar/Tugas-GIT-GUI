@@ -6,28 +6,96 @@
 </head>
 <body>
   <h1>GIT-INTRO</h1>
-  <h2>Apa Itu Git ?</h2>
-  <p>Git adalah sistem kontrol versi yang populer yang digunakan 
-    untuk melacak perubahan pada kode sumber perangkat lunak. 
-    Git memungkinkan pengembang untuk bekerja secara kolaboratif, 
-    melacak versi kode, dan mengelola riwayat perubahan dengan efisien.</p>
-  <h2>Manfaat Git</h2>
-  <dl>
-    <dt>Kontrol Versi</dt>
-    <dd>Repository adalah tempat penyimpanan proyek yang menggunakan Git. 
-      Ini berisi semua file, folder, dan riwayat perubahan.</dd>
-    <dt>Kolaborasi</dt>
-    <dd>Dengan Git, tim pengembang dapat bekerja secara bersamaan pada proyek yang sama. 
-      Git memfasilitasi penggabungan (merge) perubahan yang dilakukan oleh 
-      anggota tim ke dalam satu versi yang utuh.</dd>
-    <dt>Pemisahan Lingkungan</dt>
-    <dd>Setiap anggota tim dapat bekerja di lingkungan terpisah dengan cabang (branch) sendiri.
-       Ini memungkinkan pengembangan fitur atau eksperimen tanpa mempengaruhi kode
-        yang sedang dikerjakan oleh orang lain.</dd>    
-    <dt>Rekam Riwayat Perubahan</dt>
-    <dd>Git mencatat setiap perubahan yang terjadi pada kode, mencakup informasi 
-      tentang siapa yang melakukan perubahan, kapan, dan mengapa. 
-      Ini memberikan visibilitas dan pelacakan yang lebih baik pada evolusi kode sumber.</dd>        
-  </dl>
+    <h2>Apa Itu Git ?</h2>
+    <p>Git adalah sistem kontrol versi yang populer yang digunakan 
+      untuk melacak perubahan pada kode sumber perangkat lunak. 
+      Git memungkinkan pengembang untuk bekerja secara kolaboratif, 
+      melacak versi kode, dan mengelola riwayat perubahan dengan efisien.</p>
+    <h2>Manfaat Git</h2>
+    <dl>
+      <dt>Kontrol Versi</dt>
+      <dd>Repository adalah tempat penyimpanan proyek yang menggunakan Git. 
+        Ini berisi semua file, folder, dan riwayat perubahan.</dd>
+      <dt>Kolaborasi</dt>
+      <dd>Dengan Git, tim pengembang dapat bekerja secara bersamaan pada proyek yang sama. 
+        Git memfasilitasi penggabungan (merge) perubahan yang dilakukan oleh 
+        anggota tim ke dalam satu versi yang utuh.</dd>
+      <dt>Pemisahan Lingkungan</dt>
+      <dd>Setiap anggota tim dapat bekerja di lingkungan terpisah dengan cabang (branch) sendiri.
+        Ini memungkinkan pengembangan fitur atau eksperimen tanpa mempengaruhi kode
+          yang sedang dikerjakan oleh orang lain.</dd>    
+      <dt>Rekam Riwayat Perubahan</dt>
+      <dd>Git mencatat setiap perubahan yang terjadi pada kode, mencakup informasi 
+        tentang siapa yang melakukan perubahan, kapan, dan mengapa. 
+        Ini memberikan visibilitas dan pelacakan yang lebih baik pada evolusi kode sumber.</dd> 
+      <br>         
+    </dl>
+  <h1>GIT-FUNDAMENTAL</h1>
+    <h2>Perintah Dasar GIT</h2>
+    <h2>
+      <ol>
+        <li>Git init</li>
+        <li>Git config</li>
+        <li>Git status</li>
+        <li>Git add .</li>
+        <li>Git log</li>
+        <li>Git commit</li>
+        <li>Git clone</li>
+        <li>Git push</li>
+        <li>Git remote</li>
+        <li>Git pull</li>
+      </ol>
+    </h2>
+    <h2>Tentang Perintah Dasar GIT</h2>
+    <dl>
+      <dt>Git Init</dt>
+      <dd>git init adalah perintah yang digunakan untuk menginisialisasi sebuah repositori Git baru di dalam direktori kerja. Dengan menggunakan git init, kamu dapat membuat repositori kosong yang siap untuk melacak dan mengelola perubahan pada kode sumber proyekmu.
+
+        Saat menjalankan perintah git init, Git akan membuat direktori .git di dalam direktori kerja. Direktori ini berisi semua data yang diperlukan oleh Git untuk melacak perubahan, termasuk riwayat perubahan (commit), cabang (branch), dan konfigurasi repositori.</dd>
+      <dt>Git config</dt>
+      <dd>git config adalah perintah yang digunakan untuk mengatur konfigurasi pengguna pada repositori Git.
+         Dengan git config, kamu dapat mengatur nama pengguna, alamat email, preferensi format tampilan, 
+         dan banyak pengaturan lainnya yang berkaitan dengan penggunaan Git.
+        Pengaturan email :
+        1.git config --local user.email "your-email@example.com"
+        2.git config --local user.name "Your Name"
+        Pengaturan username :
+        1.git config --global user.email "your-email@example.com"
+        2.git config --global user.name "Your Name"
+        </dd>
+      <dt>Git Status</dt>
+      <dd>`git status` adalah perintah yang digunakan dalam Git untuk menampilkan status saat ini 
+        dari repositori kerja. Ketika menjalankan `git status`, Git akan memberikan informasi tentang
+         perubahan yang terjadi pada file-file di direktori kerja, termasuk perubahan 
+         yang belum ditambahkan ke area stage (untracked),
+         perubahan yang sudah ditambahkan ke area stage (staged), serta perubahan yang sudah dicommit 
+         (committed). Perintah ini juga akan memberikan informasi tentang branch saat ini, 
+         perubahan yang belum di-commit, dan pesan-pesan yang mungkin membantu dalam mengelola 
+         repositori. Dengan `git status`, kamu dapat dengan cepat melihat status saat ini 
+         dan memastikan bahwa perubahan yang diperlukan telah ditangani dengan benar 
+         sebelum melakukan commit atau operasi Git lainnya.</dd>    
+      <dt>Git add .</dt>
+      <dd>`git add .` adalah perintah yang digunakan untuk menambahkan semua perubahan yang ada
+         di direktori kerja ke dalam area stage (stage area) dalam Git dengan satu perintah.</dd> 
+      <dt>Git log</dt>
+      <dd>`git log` digunakan untuk melihat riwayat commit pada repositori Git.</dd>
+      <dt>Git commit</dt>
+      <dd>`git commit` digunakan untuk membuat commit (menyimpan perubahan) pada repositori Git.
+        Berikut adalah contoh penggunaan perintah git commit:
+        git commit -m "Add new feature"
+      </dd> 
+      <dt>Git clone</dt>
+      <dd>`git clone` digunakan untuk menduplikasi repositori Git yang ada ke dalam direktori kerja lokal.
+      </dd> 
+      <dt>Git push</dt>
+      <dd>`git push` digunakan untuk mengirimkan (mengunggah) perubahan lokal yang telah di-commit ke repositori jarak jauh (remote repository) yang terhubung.
+      </dd> 
+      <dt>Git remote</dt>
+      <dd>`git remote` digunakan untuk menampilkan daftar remote repository yang terhubung dengan repositori lokal.</dd>
+      <dt>Git pull</dt>
+      <dd>`git pull` digunakan untuk mengambil (menggabungkan) perubahan terbaru dari remote repository ke repositori lokal.</dd>  
+      <br>         
+    </dl>
+
 </body>
 </html>
