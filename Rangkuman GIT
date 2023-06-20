@@ -6,5 +6,28 @@
 </head>
 <body>
   <h1>GIT-INTRO</h1>
+  <h2>Apa Itu Git ?</h2>
+  <p>Git adalah sistem kontrol versi yang populer yang digunakan 
+    untuk melacak perubahan pada kode sumber perangkat lunak. 
+    Git memungkinkan pengembang untuk bekerja secara kolaboratif, 
+    melacak versi kode, dan mengelola riwayat perubahan dengan efisien.</p>
+  <h2>Manfaat Git</h2>
+  <dl>
+    <dt>Kontrol Versi</dt>
+    <dd>Repository adalah tempat penyimpanan proyek yang menggunakan Git. 
+      Ini berisi semua file, folder, dan riwayat perubahan.</dd>
+    <dt>Kolaborasi</dt>
+    <dd>Dengan Git, tim pengembang dapat bekerja secara bersamaan pada proyek yang sama. 
+      Git memfasilitasi penggabungan (merge) perubahan yang dilakukan oleh 
+      anggota tim ke dalam satu versi yang utuh.</dd>
+    <dt>Pemisahan Lingkungan</dt>
+    <dd>Setiap anggota tim dapat bekerja di lingkungan terpisah dengan cabang (branch) sendiri.
+       Ini memungkinkan pengembangan fitur atau eksperimen tanpa mempengaruhi kode
+        yang sedang dikerjakan oleh orang lain.</dd>    
+    <dt>Rekam Riwayat Perubahan</dt>
+    <dd>Git mencatat setiap perubahan yang terjadi pada kode, mencakup informasi 
+      tentang siapa yang melakukan perubahan, kapan, dan mengapa. 
+      Ini memberikan visibilitas dan pelacakan yang lebih baik pada evolusi kode sumber.</dd>        
+  </dl>
 </body>
 </html>
