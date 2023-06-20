@@ -96,6 +96,44 @@
       <dd>`git pull` digunakan untuk mengambil (menggabungkan) perubahan terbaru dari remote repository ke repositori lokal.</dd>  
       <br>         
     </dl>
+  
+  <h1>GIT BRANCH</h1>
+  <h2>Apa Itu Branch ?</h2>
+  <p>Branch dalam Git adalah sebuah cabang yang terpisah dari riwayat commit utama (master) yang memungkinkan pengembang untuk bekerja pada fitur, perbaikan bug, atau percobaan eksperimental tanpa mengganggu atau mempengaruhi riwayat commit utama. Setiap branch memiliki versi commit yang berbeda, yang memungkinkan pengembang untuk bekerja secara terisolasi dan kemudian menggabungkan perubahan tersebut ke dalam branch utama.</p>
+  <h2>Apa Manfaat Branch ?</h2>
+  <p>Manfaat dari penggunaan branch dalam Git adalah sebagai berikut:
 
+    Pengembangan Paralel: Branch memungkinkan tim pengembang untuk bekerja pada fitur atau tugas yang berbeda secara paralel. Setiap anggota tim dapat membuat branch sendiri-sendiri untuk mengembangkan fitur atau menyelesaikan tugas tertentu tanpa saling mengganggu. Hal ini meningkatkan efisiensi dan fleksibilitas dalam pengembangan perangkat lunak.
+
+    Pemisahan Perubahan: Dengan menggunakan branch, pengembang dapat membuat perubahan pada kode sumber yang tidak langsung mempengaruhi branch utama. Ini memungkinkan pengembang untuk eksperimen, melakukan perbaikan bug, atau menguji fitur baru tanpa mempengaruhi stabilitas branch utama.
+
+    Isolasi Bug: Jika bug ditemukan pada branch utama, pengembang dapat membuat branch terpisah dari titik sebelum bug terjadi dan fokus untuk menyelesaikan bug tersebut. Dengan cara ini, perbaikan bug tidak akan mengganggu pengembangan fitur lainnya yang sedang berlangsung.
+
+    Pengujian dan Review: Branch memungkinkan pengembang untuk melakukan pengujian dan review kode secara terpisah sebelum menggabungkan perubahan ke branch utama. Ini membantu memastikan bahwa perubahan yang diusulkan telah diuji dan diverifikasi sebelum dimasukkan ke dalam produksi.
+
+    Versi dan Pemulihan: Setiap branch memiliki versi commit yang berbeda, yang memungkinkan pemulihan ke versi sebelumnya jika diperlukan. Jika perubahan yang dilakukan di branch menghasilkan hasil yang tidak diinginkan, pengembang dapat kembali ke titik sebelum perubahan tersebut dengan mudah.</p>
+  <h2>Macam-Macam Perintah GIT BRANCH</h2>
+  <p>
+    Berikut adalah beberapa perintah branch dalam Git beserta fungsinya masing-masing dalam satu kalimat:
+
+    1. `git branch`: Digunakan untuk melihat daftar branch yang ada dalam repositori. 
+    2. `git branch <branch-name>`: Digunakan untuk membuat branch baru dengan nama tertentu.
+    3. `git branch -d <branch-name>`: Digunakan untuk menghapus branch yang telah selesai atau tidak lagi diperlukan.
+    4. `git branch -m <branch-name>`: Digunakan untuk mengubah nama branch.
+    5. `git branch -r`: Digunakan untuk melihat daftar branch jarak jauh (remote branches).
+    6. `git branch -a`: Digunakan untuk melihat daftar semua branch, baik lokal maupun jarak jauh.
+    7. `git branch -v`: Digunakan untuk melihat daftar branch beserta commit terakhir di setiap branch.
+    8. `git checkout <branch-name>`: Digunakan untuk beralih ke branch yang sudah ada.
+    9. `git checkout -b <branch-name>`: Digunakan untuk membuat branch baru dan beralih ke branch tersebut.
+    10. `git merge <branch-name>`: Digunakan untuk menggabungkan perubahan dari branch lain ke branch saat ini.
+    11. `git rebase <branch-name>`: Digunakan untuk menggabungkan perubahan dari branch lain ke branch saat ini dengan menggunakan rebase.
+    12. `git cherry-pick <commit>`: Digunakan untuk memilih commit tertentu dan menerapkan perubahan dari commit tersebut ke branch saat ini.
+
+    Perintah-perintah di atas memungkinkan pengguna Git untuk membuat, menghapus, beralih, menggabungkan, dan melihat daftar branch dalam repositori, sehingga memungkinkan pengembangan yang terorganisir dan kolaboratif pada berbagai fitur dan percobaan.
+  </p>
+
+  <h2>Tentang Conflict></h2>
+  <p>Konflik dalam konteks Git terjadi ketika ada perbedaan antara dua atau lebih cabang (branch) yang sedang digabungkan. Hal ini terjadi ketika perubahan yang dilakukan di satu cabang bertentangan dengan perubahan yang dilakukan di cabang lain pada bagian yang sama dari sebuah file. Ketika Git menghadapi konflik, ia tidak dapat secara otomatis memutuskan perubahan mana yang harus diterima atau ditolak. Sebagai gantinya, Git memberikan pesan konflik dan menandai file yang konflik sehingga pengguna dapat memperbaikinya secara manual. Pengguna kemudian harus mengedit file secara manual, memilih bagian mana yang harus disimpan dan membuang bagian lainnya. Setelah mengatasi konflik, pengguna harus menandai file yang telah diperbaiki sebagai resolved, kemudian melanjutkan proses penggabungan (merge) atau commit. Konflik merupakan bagian normal dalam kolaborasi pengembangan perangkat lunak dengan Git dan dapat diatasi melalui komunikasi dan pemecahan masalah antara tim pengembang yang terlibat.</p>
+  
 </body>
 </html>
