@@ -96,6 +96,52 @@
       <dd>`git pull` digunakan untuk mengambil (menggabungkan) perubahan terbaru dari remote repository ke repositori lokal.</dd>  
       <br>         
     </dl>
+  <h1>Pengenalan Sourcetree</h1>
+  <p>Materi: Pengenalan SourceTree untuk Pengelolaan Repositori Git
 
+Pendahuluan:
+SourceTree adalah aplikasi desktop yang populer dan intuitif yang digunakan untuk mengelola repositori Git dengan antarmuka grafis. Dikembangkan oleh Atlassian, SourceTree menyediakan fitur-fitur yang kuat dan mudah digunakan untuk melakukan operasi Git tanpa perlu menghafal perintah-perintah Git secara manual. Dalam materi ini, kita akan menjelajahi beberapa fitur utama SourceTree dan bagaimana menggunakannya untuk mengelola repositori Git dengan mudah.
+
+1. Menginstal SourceTree:
+   - Unduh dan instal SourceTree dari situs web resminya (https://www.sourcetreeapp.com).
+   - Ikuti langkah-langkah instalasi yang disediakan dan pastikan untuk mengkonfigurasi pengaturan dasar seperti email dan nama pengguna Git.
+
+2. Mengimpor Repositori:
+   - Buka SourceTree dan pilih opsi "File" > "New / Clone" untuk membuat repositori baru atau mengimpor repositori yang sudah ada.
+   - Pilih sumber repositori, seperti direktori lokal atau URL remote, dan ikuti instruksi untuk mengimpor repositori ke SourceTree.
+
+3. Antarmuka SourceTree:
+   - Jelajahi antarmuka SourceTree yang terdiri dari panel samping dengan daftar repositori dan panel utama yang menampilkan informasi dan visualisasi grafik dari repositori terpilih.
+
+4. Melihat Perubahan:
+   - Gunakan panel "File Status" untuk melihat perubahan yang terjadi pada repositori, termasuk perubahan yang belum di-stage (unstaged), perubahan yang sudah di-stage (staged), dan file yang diabaikan (ignored).
+   - Lihat perubahan file secara rinci dan bandingkan perubahan antara commit menggunakan fitur diff.
+
+5. Membuat Commit:
+   - Pilih file atau perubahan yang ingin di-commit dan tambahkan pesan commit yang jelas dan deskriptif.
+   - Lakukan commit dengan mengklik tombol "Commit" dan pastikan perubahan telah berhasil tersimpan di repositori.
+
+6. Mencatat Riwayat Commit:
+   - Gunakan fitur "Log / History" untuk melihat riwayat commit lengkap dari repositori, termasuk informasi tentang setiap commit seperti penulis, tanggal, dan pesan commit.
+   - Navigasi melalui commit dan melihat perubahan yang terjadi pada setiap commit untuk memahami evolusi repositori.
+
+7. Mengelola Cabang (Branch):
+   - Buat, beralih, dan gabungkan cabang menggunakan fitur "Branches" dalam SourceTree.
+   - Pindah antara cabang-cabang yang ada dan lihat visualisasi grafis dari struktur cabang untuk memahami hubungan antara cabang-cabang.
+
+8. Sinkronisasi dengan Remote Repository:
+   - Gunakan fitur "Remote" untuk terhubung dengan remote repository seperti GitHub atau Bitbucket.
+   - Ambil perubahan terbaru dari remote repository menggunakan fitur "Pull" dan kirim perubahan lokal ke remote repository menggunakan fitur "Push".
+
+9. Menyelesaikan Konflik:
+   - Jika terjadi konflik saat melakukan operasi penggabungan (merge), gunakan fitur "Resolve Conflicts" untuk memperba
+
+iki konflik secara manual.
+   - Tinjau perubahan, pilih bagian mana yang harus disimpan, dan tandai konflik sebagai resolved sebelum melanjutkan penggabungan.
+
+10. Fitur Tambahan:
+    - Explore fitur tambahan SourceTree seperti git flow, stash, tag, dan submodul untuk mengelola repositori secara lebih lanjut.
+
+Dengan menggunakan SourceTree, pengelolaan repositori Git menjadi lebih mudah dan intuitif. Aplikasi ini menyediakan antarmuka yang nyaman dan fitur-fitur yang membantu dalam melihat, mengelola, dan berkolaborasi pada repositori Git. Dalam praktiknya, terus eksplorasi dan manfaatkan fitur-fitur SourceTree sesuai kebutuhan proyek dan tim pengembangan.</p>
 </body>
 </html>
